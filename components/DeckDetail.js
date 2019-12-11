@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, Platform } from 'react-native'
 import { connect } from 'react-redux'
 import { handlRemoveDeck } from '../actions'
-import { headerText, red, darkgray, card, lightgray, layout, darkblue, white } from '../utils/styles'
+import { headerText, red, darkgray, card, lightgray, layout, white } from '../utils/styles'
 import Button from './Button'
 import Link from './Link'
 import { HeaderBackButton } from 'react-navigation-stack'
@@ -36,7 +36,7 @@ class DeckDetail extends Component {
 
     goToAddCard = () => {
         const { deck } = this.props
-        this.props.navigation.navigate('AddCard', {deckId: deck.id}, {updateSuccessful: () => this.updateCardAdded()})
+        this.props.navigation.navigate('AddCard', {deckId: deck.id})
     }
 
     goToQuiz = () => {

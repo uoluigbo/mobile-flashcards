@@ -40,7 +40,7 @@ class AddCard extends Component {
     }
 
     handleSubmit = () => {
-        const { dispatch, deckId, goBack, updateSuccessful } = this.props
+        const { dispatch, deckId, } = this.props
         const { question, answer } = this.state
 
         if (this.state.question === '' || this.state.answer === '') {
@@ -125,21 +125,19 @@ const styles = StyleSheet.create({
   });
 
 function mapStateToProps(state, { navigation }) {
-    const { deckId, updateSuccessful } = navigation.state.params
+    const { deckId, } = navigation.state.params
 
     return {
         deckId: deckId,
         deck: state[deckId],
-        updateSuccessful
     }
 }
 
 function mapDispatchToProps (dispatch, { navigation }) {
-    const { deckId, updateSuccessful } = navigation.state.params
+    const { deckId, } = navigation.state.params
 
     return {
         dispatch,
-        updateSuccessful,
         goBack: () => navigation.navigate(
             'DeckDetail',
             {deckId: deckId}
