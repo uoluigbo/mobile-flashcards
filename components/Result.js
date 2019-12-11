@@ -60,10 +60,12 @@ const styles = StyleSheet.create({
     retakeBtn: {
         backgroundColor: orange,
         marginTop: 20,
+        width: 180,
     },
     backBtn: {
         backgroundColor: green,
         marginTop: 20,
+        width: 180,
     },
 })
 

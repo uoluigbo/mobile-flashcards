@@ -22,6 +22,9 @@ Create a new card by adding a question and an answer
 
 Displays the result of the quiz. There is an option to retake the quiz or return to the deck details page.
 
+## Test Platforms
+This app has been tested on Android and iOS Emulators and on IPhone 6s device
+
 ## Installing and running
 * clone from: https://github.com/uoluigbo/mobile-flashcards.git
 
