@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Mobile Flashcards",
+    "description": "An easy to use flash card. Great for quick studying",
+    "slug": "mobile-flashcards",
+    "sdkVersion": "35.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iconfinder_8_512.png",
+    "notification": {
+      "icon": "./assets/iconfinder_8_64.png"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.mobileflashcard.exp"
+    },
+    "android": {
+      "package": "org.mobileflashcard.exp"
+    }
+  }
+}
