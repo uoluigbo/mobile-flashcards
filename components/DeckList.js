@@ -111,24 +111,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(DeckList)
-
-/**
- * <View style={[layout, styles.container, len == 0 ? styles.center : {}]}>
-                <Text style={[headerText, styles.center]}>Decks</Text>
-                {
-                    len > 0
-                     ? Object.keys(decks).map((deck) => <Deck key={deck} deck={decks[deck]}/>)
-                     : <View style={card}>
-                        <Text style={styles.noData}>There are no decks. Please add a deck</Text>
-                        </View>
-                }
-            </View>
-
-            {
-                    len > 0
-                     ? <FlatList keyExtractor={this.getKey} data={Object.keys(decks).map((deck) => decks[deck])} renderItem={this.renderItem}  />
-                     : <View style={card}>
-                            <Text style={styles.noData}>There are no decks. Please add a deck</Text>
-                        </View>
-                }
- */

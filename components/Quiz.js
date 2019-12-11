@@ -67,7 +67,6 @@ class Quiz extends Component {
         if (questions.length === 0) {
             return (
                 <View style={[layout, styles.container, styles.noQuiz]}>
-                    {/*<FontAwesome name='hand-stop-o' size={30} color='red' />*/}
                     <Foundation name='alert' size={30} color='red' />
                     <Text style={styles.stopText}>Sorry you can't take a quiz because there are no cards in this deck</Text>
                 </View>
